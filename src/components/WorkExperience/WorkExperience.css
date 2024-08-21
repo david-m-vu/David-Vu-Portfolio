@@ -1,0 +1,25 @@
+.WorkExperience {
+    background: rgb(252,186,3);
+    background: linear-gradient(45deg, rgba(67,73,197,1) 0%, rgba(252,134,3,0.4640231092436975) 100%);
+    min-height: 250px;
+    overflow: hidden;
+    transition: height 0.2s ease;
+}
+
+
+.WorkExperience .logo {
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+}
+
+.description {
+    min-height: 320px;
+    opacity: 0;
+    transform: translate3d(0, -1rem, 0);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+
+
+
