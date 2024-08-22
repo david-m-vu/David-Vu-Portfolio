@@ -1,0 +1,12 @@
+.rightArrow {
+  animation: slide-right 1.3s ease infinite alternate;
+}
+
+@keyframes slide-right {
+  0%, 50% {
+    transform: translate3d(0rem, 0, 0)
+  }
+  100% {
+    transform: translate3d(1rem, 0, 0)
+  }
+}

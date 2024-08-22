@@ -2,10 +2,10 @@ import "./WorkExperience.css"
 
 const WorkExperience = (props) => {
     return (
-        <div className={`WorkExperience w-full 2xl:max-w-[50%] mr-4 outline-white outline-1 outline rounded-lg`}>
+        <div className={`WorkExperience w-full 2xl:max-w-[50%] mr-4 rounded-lg`}>
             <div className="content p-4 h-full">
                 <header className="flex flex-row gap-4 items-start">
-                    <div>
+                    <div className="flex flex-col gap-1">
                         <div className="flex flex-row items-center gap-4">
                             <div className="rounded-full logo-container relative flex justify-center items-center flex-col">
                                 <img className="logo rounded-full" src={props.logo}></img>

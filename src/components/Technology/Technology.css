@@ -1,5 +1,13 @@
+#Technology {
+    transition: transform 0.15s ease;
+}
+
 .tech-icon-container {
     background: rgb(252,186,3);
     background: linear-gradient(45deg, rgba(67,73,197,1) 0%, rgba(252,134,3,0.4640231092436975) 100%);
     box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 8px 10px -6px rgba(255, 255, 255, 0.1);
+}
+
+#Technology:hover {
+    transform: translate3d(0, -0.5rem, 0);
 }

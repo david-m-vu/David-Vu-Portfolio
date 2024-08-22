@@ -7,18 +7,28 @@ import Projects from "./scenes/Projects/Projects.jsx";
 import Work from "./scenes/Work/Work.jsx";
 import NavBar from "./components/NavBar/NavBar.jsx";
 
+import { AnimatePresence } from "framer-motion"
+
+let accessedMap = new Map();
+accessedMap.set("/about", false);
+accessedMap.set("/projects", false);
+accessedMap.set("/work", false);
+
 function App() {
-  const [linksAccessed, setLinksAccessed] = useState(["about", "projects", "work"])
+  const [linksAccessed, setLinksAccessed] = useState(accessedMap)
 
   return (
-      <div id="App" className="w-full h-full p-4 pb-8">
-        <NavBar/>
+    <div id="App" className="w-full h-full p-4 pb-8">
+      <NavBar linksAccessed={linksAccessed} setLinksAccessed={setLinksAccessed} />
+      <AnimatePresence>
         <Routes>
-          <Route path="/" element={<About/>}/>
-          <Route path="/projects" element={<Projects/>}/>
-          <Route path="/work" element={<Work/>}/>
+          <Route path="/" element={<About linksAccessed={linksAccessed} setLinksAccessed={setLinksAccessed} />} />
+          <Route path="/projects" element={<Projects linksAccessed={linksAccessed} setLinksAccessed={setLinksAccessed} />} />
+          <Route path="/work" element={<Work linksAccessed={linksAccessed} setLinksAccessed={setLinksAccessed} />} />
         </Routes>
-      </div>
+      </AnimatePresence>
+
+    </div>
   )
 }
 
