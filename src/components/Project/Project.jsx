@@ -7,7 +7,7 @@ const Project = (props) => {
     const [isHoveringImage, setIsHoveringImage] = useState(false);
 
     return (
-        <div className={`Project rounded-lg ${hadHovered ? "opened" : ""}`} onMouseOver={() => setHadHovered(true)}>
+        <div className={`Project rounded-lg ${(hadHovered || window.innerWidth <= 452 )  ? "opened" : ""}`} onMouseOver={() => setHadHovered(true)}>
             <div className="content p-4 h-full ">
                 <div className="header flex justify-between items-center text-lg font-semibold">
                     <p className="text-nowrap">{props.name}</p>

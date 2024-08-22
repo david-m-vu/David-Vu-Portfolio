@@ -3,14 +3,14 @@
     background: linear-gradient(45deg, rgba(67,73,197,1) 0%, rgba(252,134,3,0.4640231092436975) 100%);
     min-height: 250px;
     overflow: hidden;
-    transition: height 0.2s ease;
+    transition: height 0.2s ease, transform 0.15s ease;
     box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 8px 10px -6px rgba(255, 255, 255, 0.1);
 }
 
 
 .WorkExperience .logo {
+    min-width: 55px;
     height: 55px;
-    width: 55px;
     object-fit: cover;
 }
 
@@ -21,6 +21,6 @@
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-
-
-
+.WorkExperience:hover {
+    transform: translate3d(-5px, 0, 0);
+}

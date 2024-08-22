@@ -18,7 +18,7 @@ const About = (props) => {
         <motion.div id="About">
             <div className="flex flex-col items-start gap-8">
                 <div id="personal-info">
-                    <p>&gt; I&apos;m a Senior studying <u><b>Electrical Engineering and Computer Science</b></u> at  <u><b>UC Berkeley,</b></u> <br />set to graduate with a Bachelor&apos;s by December 2025.</p>
+                    <p>&gt; I&apos;m a Senior at  <u><b>UC Berkeley,</b></u> studying <u><b>Electrical Engineering and Computer Science</b></u> <br />set to graduate with a Bachelor&apos;s by December 2025.</p>
                 </div>
                 <div>
                     <p>&gt; I started coding in 2021 and haven&apos;t stopped ever since.</p>

@@ -29,7 +29,7 @@ const Work = (props) => {
         })}
       </ul>
       <div className="flex flex-row cursor-pointer gap-2 float-right p-4">
-        <h3 onClick={() => navigate("/")} className={`${props.linksAccessed.get("/about") ? "text-gray-300 hover:text-white" : "text-purple-400 hover:text-purple-300"}`}>Back to start</h3>
+        <h3 onClick={() => navigate("/")} className={`${props.linksAccessed.get("/about") ? "text-gray-300 hover:text-white" : "text-purple-400 hover:text-purple-300"}`}>About</h3>
         {
           props.linksAccessed.get("/about") ? <img onClick={() => navigate("/")} className="rightArrow w-[1rem]" src={rightArrowIcon}></img> : <img onClick={() => navigate("/")} className="rightArrow w-[1rem]" src={purpleRightArrowIcon}></img>
         }
