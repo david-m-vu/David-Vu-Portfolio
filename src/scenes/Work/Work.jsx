@@ -12,10 +12,14 @@ import { motion } from "framer-motion"
 const Work = (props) => {
   const navigate = useNavigate();
   useEffect(() => {
+    window.scrollTo(0, 0);
     props.setLinksAccessed((prev) => new Map([...prev, ["/work", true]]))
   }, [])
 
+
+
   return (
+
     <motion.div id="Work">
       {/* <p><b><u>Work Experience</u></b></p> */}
       <ul className="flex flex-col gap-8 mt-4 pl-4 pt-2 border-l-4 border-white">
