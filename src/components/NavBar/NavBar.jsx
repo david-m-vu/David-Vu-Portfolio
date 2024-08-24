@@ -27,7 +27,7 @@ const NavBar = (props) => {
 
     return (
         <div id="NavBar" className="px-4 py-4 ">
-            <nav className="flex flex-col min-[556px]:flex-row min-[556px]:justify-between">
+            <nav className="flex flex-col sm:flex-row sm:justify-between sm:gap-4 md:gap-8">
                 <div className="left flex flex-row justify-between items-center gap-4 md:gap-8 md:justify-start">
 
                     <NavLink to="/"><h1 className="font-bold text-center">David Vu</h1></NavLink>
@@ -48,6 +48,10 @@ const NavBar = (props) => {
 
                 </div>
                 <div className="right flex-row items-center gap-4 flex justify-end">
+                    <div className="relative group">
+                        <div className={`${textBgBlur} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>Contact</div>
+                        <NavLink to="/contact"><div className={`${getIsHighlighted("/contact")} relative hover:cursor-pointer ease-in-out duration-150 group-hover:text-[#ffffff] transition-colors text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>Contact</div></NavLink>
+                    </div>
                     <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/david-vu-a4a2b7223/"><img className="h-[1.5rem] md:h-[2rem] lg:h-[2.25rem] hover:scale-95 transition-transform" src={linkedInIcon}></img></a>
                     <a rel="noopener noreferrer" target="_blank" href="https://github.com/david-m-vu"><img className="h-[1.5rem] md:h-[2rem] lg:h-[2.25rem] hover:scale-95 transition-transform" src={githubIcon}></img></a>
                 </div>

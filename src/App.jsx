@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./scenes/About/About.jsx";
 import Projects from "./scenes/Projects/Projects.jsx";
 import Work from "./scenes/Work/Work.jsx";
+import Contact from "./scenes/Contact/Contact.jsx";
 import NavBar from "./components/NavBar/NavBar.jsx";
 
 import { AnimatePresence } from "framer-motion"
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<About linksAccessed={linksAccessed} setLinksAccessed={setLinksAccessed} />} />
           <Route path="/projects" element={<Projects linksAccessed={linksAccessed} setLinksAccessed={setLinksAccessed} />} />
           <Route path="/work" element={<Work linksAccessed={linksAccessed} setLinksAccessed={setLinksAccessed} />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
 
