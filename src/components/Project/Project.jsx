@@ -5,9 +5,14 @@ import externalLinkIcon from "../../assets/icons/external-link.png"
 const Project = (props) => {
     const [hadHovered, setHadHovered] = useState(false)
     const [isHoveringImage, setIsHoveringImage] = useState(false);
+    const [isOpened, setIsOpened] = useState(false);
+
+    useEffect(() => {
+        setIsOpened(true);
+    }, [])
 
     return (
-        <div className={`Project opened rounded-lg ${(hadHovered || window.innerWidth <= 452 )  ? "opened" : ""}`} onMouseOver={() => setHadHovered(true)}>
+        <div className={`Project ${isOpened && "opened"} rounded-lg ${(hadHovered || window.innerWidth <= 452 )  ? "opened" : ""}`} onMouseOver={() => setHadHovered(true)}>
             <div className="content p-4 h-full ">
                 <div className="header flex justify-between items-center text-lg font-semibold">
                     <p className="text-nowrap">{props.name}</p>

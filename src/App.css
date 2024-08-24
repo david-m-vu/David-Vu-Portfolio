@@ -1,5 +1,5 @@
 .rightArrow {
-  animation: slide-right 1.3s ease infinite alternate;
+  animation: slide-right 1s ease infinite alternate;
 }
 
 @keyframes slide-right {

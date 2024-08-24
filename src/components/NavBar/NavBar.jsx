@@ -26,21 +26,20 @@ const NavBar = (props) => {
     }
 
     return (
-        <div id="NavBar" className="mb-4">
+        <div id="NavBar" className="px-4 py-4 ">
             <nav className="flex flex-col min-[556px]:flex-row min-[556px]:justify-between">
                 <div className="left flex flex-row justify-between items-center gap-4 md:gap-8 md:justify-start">
 
                     <NavLink to="/"><h1 className="font-bold text-center">David Vu</h1></NavLink>
                     <div className="flex flex-row items-center gap-4 md:gap-8">
                         <div className="relative group">
-                            <div className={`${textBgBlur} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>About / Projects</div>
-                            <NavLink to="/"><div className={`${getIsHighlighted("/")} ${getNavLinkClass("/about")} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>About / Projects</div></NavLink>
+                            <div className={`${textBgBlur} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>About</div>
+                            <NavLink to="/"><div className={`${getIsHighlighted("/")} ${getNavLinkClass("/")} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>About</div></NavLink>
                         </div>
-
-                        {/* <div className="relative group">
+                        <div className="relative group">
                             <div className={`${textBgBlur} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>Projects</div>
                             <NavLink to="/projects"><div className={`${getIsHighlighted("/projects")} ${getNavLinkClass("/projects")} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>Projects</div></NavLink>
-                        </div> */}
+                        </div>
                         <div className="relative group">
                             <div className={`${textBgBlur} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>Work</div>
                             <NavLink to="/work"><div className={`${getIsHighlighted("/work")} ${getNavLinkClass("/work")} text-[0.75rem] md:text-[0.8rem] lg:text-[1rem]`}>Work</div></NavLink>

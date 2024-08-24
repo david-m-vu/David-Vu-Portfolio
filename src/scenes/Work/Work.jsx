@@ -12,15 +12,11 @@ import { motion } from "framer-motion"
 const Work = (props) => {
   const navigate = useNavigate();
   useEffect(() => {
-    window.scrollTo(0, 0);
     props.setLinksAccessed((prev) => new Map([...prev, ["/work", true]]))
   }, [])
 
-
-
   return (
-
-    <motion.div id="Work">
+    <motion.div id="Work" className="inline-flex flex-col items-start px-4 pb-4">
       {/* <p><b><u>Work Experience</u></b></p> */}
       <ul className="flex flex-col gap-8 mt-4 pl-4 pt-2 border-l-4 border-white">
         {workExperiences.map((experience, index) => {
@@ -32,10 +28,10 @@ const Work = (props) => {
           )
         })}
       </ul>
-      <div className="flex flex-row cursor-pointer gap-2 float-right p-4">
-        <h3 onClick={() => navigate("/")} className={`${props.linksAccessed.get("/about") ? "text-gray-300 hover:text-white" : "text-purple-400 hover:text-purple-300"}`}>About</h3>
+      <div className="inline-flex flex-row cursor-pointer gap-2 my-4">
+        <h3 onClick={() => navigate("/")} className={`${props.linksAccessed.get("/") ? "text-gray-300 hover:text-white" : "text-purple-400 hover:text-purple-300"}`}>About</h3>
         {
-          props.linksAccessed.get("/about") ? <img onClick={() => navigate("/")} className="rightArrow w-[1rem]" src={rightArrowIcon}></img> : <img onClick={() => navigate("/")} className="rightArrow w-[1rem]" src={purpleRightArrowIcon}></img>
+          props.linksAccessed.get("/") ? <img onClick={() => navigate("/")} className="rightArrow w-[1rem]" src={rightArrowIcon}></img> : <img onClick={() => navigate("/")} className="rightArrow w-[1rem]" src={purpleRightArrowIcon}></img>
         }
       </div>
     </motion.div>
