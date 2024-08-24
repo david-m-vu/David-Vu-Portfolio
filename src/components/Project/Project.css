@@ -2,13 +2,9 @@
     background: rgb(252,186,3);
     background: linear-gradient(45deg, rgba(252,134,3,0.4640231092436975) 0%, rgba(67,73,197,1) 100%);
     width: 332.3px;
-    height: 270px;
+    min-height: 270px;
     overflow: hidden;
     transition: height 0.2s ease;
-}
-
-.opened {
-    height: 600px;
 }
 
 .Project .content {
