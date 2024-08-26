@@ -4,7 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import linkedInIcon from "../../assets/icons/linkedin-icon.png";
 import githubIcon from "../../assets/icons/github-mark.svg";
 
-const textBgBlur = "text-center absolute hover:cursor-pointer transition-colors ease-in-out duration-150 group-hover:bg-gradient-to-r from-pink-300 to-orange-400 group-hover:scale-125 inset-0 bg-clip-text text-transparent blur"
+const textBgBlur = "text-center absolute hover:cursor-pointer transition-colors ease-in-out duration-150 group-hover:bg-gradient-to-r from-pink-300 to-orange-400 group-hover:scale-125 inset-0 bg-clip-text text-transparent blur blurEffect"
 
 const NavBar = (props) => {
     const location = useLocation();
