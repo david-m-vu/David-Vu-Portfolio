@@ -29,7 +29,7 @@ const About = (props) => {
                     </div>
                 </div>
                 <div className="inline-flex flex-row cursor-pointer gap-2 my-4">
-                    <h3 onClick={() => navigate("/projects")} className={`${props.linksAccessed.get("/projects") ? "text-gray-300 hover:text-white" : "text-purple-400 hover:text-purple-300"}`}>Projects</h3>
+                    <h3 onClick={() => navigate("/projects")} className={`${props.linksAccessed.get("/projects") ? "text-gray-300 hover:text-white ease-in-out duration-150 transition-colors" : "text-purple-400 hover:text-purple-300 ease-in-out duration-150 transition-colors"}`}>Projects</h3>
                     {
                         props.linksAccessed.get("/projects") ? <img onClick={() => navigate("/projects")} className="rightArrow w-[1rem]" src={rightArrowIcon}></img> : <img onClick={() => navigate("/projects")} className="rightArrow w-[1rem]" src={purpleRightArrowIcon}></img>
                     }
