@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import rightArrowIcon from "../../assets/icons/arrow-right.svg";
 import purpleRightArrowIcon from "../../assets/icons/arrow-right-purple.svg";
-import haas from "../../assets/haas.jpeg"
+import me from "../../assets/me.png"
 
 import { motion } from "framer-motion";
 
@@ -36,7 +36,7 @@ const About = (props) => {
                 </div>
             </div>
             <div className="bg-black p-2 rounded-lg">
-                <img src={haas} alt="haas pavilion" className="rounded-lg w-[20rem]"></img>
+                <img src={me} alt="me" className="rounded-lg w-[20rem]"></img>
             </div>
         </motion.div >
     )
