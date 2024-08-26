@@ -14,7 +14,9 @@ const About = (props) => {
     }, [])
 
     return (
-        <motion.div id="About" className="inline-flex flex-col items-start px-4 pb-4 sm:gap-4 md:gap-8 sm:flex-row">
+        <motion.div id="About" className="inline-flex flex-col items-start px-4 pb-4 sm:gap-4 md:gap-8 sm:flex-row"
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}>
             <div className="">
                 <div className="flex flex-col items-start gap-8">
                     <div id="personal-info">
