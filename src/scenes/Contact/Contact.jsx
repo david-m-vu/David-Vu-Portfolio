@@ -1,9 +1,11 @@
 import "./Contact.css";
 import haas from "../../assets/haas.jpeg";
 
+import { motion } from "framer-motion"
+
 const Contact = () => {
     return (
-        <div id="Contact" className="px-4 pb-4 inline-flex items-start flex-col gap-4">
+        <motion.div id="Contact" className="px-4 pb-4 inline-flex items-start flex-col gap-4">
                         <div className="rounded-lg p-2 bg-black">
                 <img src={haas} className="rounded-lg w-[15rem]"></img>
             </div>
@@ -13,7 +15,7 @@ const Contact = () => {
                 <p>david.vu@berkeley.edu (school email)</p>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

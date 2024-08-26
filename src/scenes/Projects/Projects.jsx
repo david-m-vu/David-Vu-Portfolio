@@ -19,7 +19,11 @@ const Projects = (props) => {
   }, [])
 
   return (
-    <motion.div id="Projects" className="inline-flex flex-col items-start gap-4 px-4 pb-4">
+    <motion.div id="Projects" className="inline-flex flex-col items-start gap-4 px-4 pb-4"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+>
       <div>
         <p>&gt; I&apos;m also a <span className="font-bold"><u>Full-stack developer</u></span> interested in creating fun and engaging user experiences with AI.</p>
         <p>The projects I&apos;ve done so far have pushed me to optimize for real-time data processing and software scalability, with the goal of having both passive and active interactions translate to instant, useful results.</p>

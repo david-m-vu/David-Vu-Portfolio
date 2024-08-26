@@ -16,7 +16,10 @@ const Work = (props) => {
   }, [])
 
   return (
-    <motion.div id="Work" className="inline-flex flex-col items-start px-4 pb-4">
+    <motion.div id="Work" className="inline-flex flex-col items-start px-4 pb-4"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}>
       {/* <p><b><u>Work Experience</u></b></p> */}
       <ul className="flex flex-col gap-8 mt-4 pl-4 pt-2 border-l-4 border-white">
         {workExperiences.map((experience, index) => {
