@@ -10,9 +10,9 @@ export const workExperiences = [
     logo: tiktokLogo,
     role: "Software Engineer Intern",
     company: "TikTok",
-    points: ["Built an internal automation tool using Node.js that created 4,409 Enterprise Business Centers for Big Six advertising agencies on TikTok Business Center, reducing customer onboarding time by 99.945% and delivering major operational efficiencies",
-      "Designed and implemented a self-serve refund system for suspended advertisers on TikTok Ads Manager using React, Golang, and RocketMQ,  leading to ~71k eligible accounts refunded with $2.78M returned. This also reduced refund processing time by 83% (30 → 5 days) while eliminating significant legal and PR risks",
-      "Launched new TikTok One account type for agencies, enabling aggregated client management and incentive allocation tools"]
+    points: ["Designed and implemented a self-serve refund system for suspended advertisers on TikTok Ads Manager using React, Golang, and RocketMQ,  leading to ~71k eligible accounts refunded with $2.78M returned. Reduced refund processing time by 83% (30 → 5 days) while eliminating significant legal/PR risks",
+      "Built an internal automation tool using Node.js that created 4,409 Enterprise Business Centers for the Big Six advertising agencies on TikTok Business Center, reducing customer onboarding time by 99.9% and improving operational efficiencies",
+      "Created a new TikTok One account type for marketing agencies, enabling aggregated client management and incentive allocation tools to streamline agency operations"]
   },
   {
     dates: ["January 2024", "June 2024"],
