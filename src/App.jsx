@@ -10,10 +10,11 @@ import NavBar from "./components/NavBar/NavBar.jsx";
 
 import { AnimatePresence } from "framer-motion"
 
-let accessedMap = new Map();
-accessedMap.set("/", false);
-accessedMap.set("/projects", false);
-accessedMap.set("/work", false);
+let accessedMap = new Map([
+  ["/", false],
+  ["/projects", false],
+  ["/work", false]
+]);
 
 function App() {
   const [linksAccessed, setLinksAccessed] = useState(accessedMap)

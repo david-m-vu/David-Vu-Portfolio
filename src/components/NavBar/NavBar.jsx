@@ -18,6 +18,7 @@ const NavBar = (props) => {
     }
 
     const getNavLinkClass = (path) => {
+        // if link not accessed yet and the given path isn't the current location, do infinite animation
         if (path !== location && !props.linksAccessed.get(path)) {
             return "pulsate text-purple-400 relative hover:cursor-pointer ease-in-out duration-150 group-hover:text-purple-300 transition-colors"
         } else {
