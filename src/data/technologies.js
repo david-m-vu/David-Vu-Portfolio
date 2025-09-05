@@ -13,6 +13,8 @@ import javaIcon from "../assets/icons/java-icon.svg";
 import cIcon from "../assets/icons/c-icon.png";
 import cppIcon from "../assets/icons/cpp-icon.svg";
 import rustIcon from "../assets/icons/rust-icon.png";
+import rubyIcon from "../assets/icons/ruby-icon.png";
+import ocamlIcon from "../assets/icons/ocaml-icon.svg";
 import thriftIcon from "../assets/icons/thrift-icon.png";
 import arduinoIcon from "../assets/icons/arduino-icon.webp";
 import riscvIcon from "../assets/icons/riscv-icon.png";
@@ -51,6 +53,10 @@ export const technologies = [
         icon: reactIcon
     },
     {
+        name: "Vue.js",
+        icon: vueIcon
+    },
+    {
         name: "Next.js",
         icon: nextIcon
     },
@@ -79,10 +85,6 @@ export const technologies = [
         icon: flaskIcon
     },
     {
-        name: "MongoDB",
-        icon: mongoIcon
-    },
-    {
         name: "Java",
         icon: javaIcon
     },
@@ -99,8 +101,20 @@ export const technologies = [
         icon: rustIcon
     },
     {
-        name: "Apache Thrift",
-        icon: thriftIcon
+        name: "Ruby",
+        icon: rubyIcon
+    },
+    {
+        name: "OCaml",
+        icon: ocamlIcon
+    },
+    {
+        name: "MongoDB",
+        icon: mongoIcon
+    },
+    {
+        name: "Firebase",
+        icon: firebaseIcon
     },
     {
         name: "JSON Web Token",
@@ -113,6 +127,10 @@ export const technologies = [
     {
         name: "MySQL",
         icon: mysqlIcon
+    },
+    {
+        name: "Apache Thrift",
+        icon: thriftIcon
     },
     {
         name: "Three.js",
@@ -147,20 +165,12 @@ export const technologies = [
         icon: riscvIcon
     },
     {
-        name: "Vue.js",
-        icon: vueIcon
-    },
-    {
         name: "Flutter",
         icon: flutterIcon
     },
     {
-        name: "PostegreSQL",
+        name: "PostgreSQL",
         icon: postgreIcon
-    },
-    {
-        name: "Firebase",
-        icon: firebaseIcon
     },
     {
         name: "Supabase",
