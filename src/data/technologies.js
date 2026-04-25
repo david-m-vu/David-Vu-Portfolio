@@ -197,7 +197,7 @@ export const technologies = [
         icon: cssIcon
     },
     {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         icon: tailwindIcon
     },
     {
