@@ -1,17 +1,20 @@
 import "./About.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
+
 import rightArrowIcon from "../../assets/icons/arrow-right.svg";
 import purpleRightArrowIcon from "../../assets/icons/arrow-right-purple.svg";
 import me from "../../assets/me.png"
 
 import { motion } from "framer-motion";
 
-const About = (props) => {
+const About = ({ setLinksAccessed, linksAccessed }) => {
     const navigate = useNavigate();
+
     useEffect(() => {
-        props.setLinksAccessed((prev) => new Map([...prev, ["/", true]]))
-    }, [])
+        setLinksAccessed((prev) => new Map([...prev, ["/", true]]))
+    }, [setLinksAccessed])
 
     return (
         <motion.div id="About" className="inline-flex flex-col items-start px-4 pb-4 sm:gap-4 md:gap-8 sm:flex-row"
@@ -19,11 +22,14 @@ const About = (props) => {
         exit={{opacity: 0}}>
             <div className="">
                 <div className="flex flex-col items-start gap-8">
+                    <p>Hello World!</p>
                     <div id="personal-info">
-                        <p>&gt; I&apos;m a Senior at  <u><b>UC Berkeley,</b></u> studying <u><b>Electrical Engineering and Computer Science</b></u> <br />set to graduate with a Bachelor&apos;s by December 2025.</p>
+                        {/* <p>&gt; I&apos;m a Senior at  <u><b>UC Berkeley,</b></u> studying <u><b>Electrical Engineering and Computer Science</b></u> <br />set to graduate with a Bachelor&apos;s by December 2025.</p> */}
+                        <p className="prompt">I&apos;m a <strong className="underline">Software Engineer</strong> and  <strong className="underline">UC Berkeley</strong> graduate.</p>
+                        <p className="text-[#bcbcbc]">(B.S. Electrical Engineering and Computer Science (EECS), Dec 2025)</p>
                     </div>
                     <div>
-                        <p>&gt; I started coding in 2021 and haven&apos;t stopped ever since.</p>
+                        <p className="prompt">I started coding in 2021 and have been building ever since.</p>
                         <p>My passion lies in elevating human interactions through user-centered design utilizing both software and hardware.</p>
                     </div>
                     <div>
@@ -31,9 +37,9 @@ const About = (props) => {
                     </div>
                 </div>
                 <div className="inline-flex flex-row cursor-pointer gap-2 my-4">
-                    <h3 onClick={() => navigate("/projects")} className={`${props.linksAccessed.get("/projects") ? "text-gray-300 hover:text-white ease-in-out duration-150 transition-colors" : "text-purple-400 hover:text-purple-300 ease-in-out duration-150 transition-colors"}`}>Projects</h3>
+                    <h3 onClick={() => navigate("/projects")} className={`${linksAccessed.get("/projects") ? "text-gray-300 hover:text-white ease-in-out duration-150 transition-colors" : "text-purple-400 hover:text-purple-300 ease-in-out duration-150 transition-colors"}`}>Projects</h3>
                     {
-                        props.linksAccessed.get("/projects") ? <img onClick={() => navigate("/projects")} className="rightArrow w-[1rem]" src={rightArrowIcon}></img> : <img onClick={() => navigate("/projects")} className="rightArrow w-[1rem]" src={purpleRightArrowIcon}></img>
+                        linksAccessed.get("/projects") ? <img onClick={() => navigate("/projects")} className="rightArrow w-[1rem]" src={rightArrowIcon}></img> : <img onClick={() => navigate("/projects")} className="rightArrow w-[1rem]" src={purpleRightArrowIcon}></img>
                     }
                 </div>
             </div>
@@ -42,6 +48,11 @@ const About = (props) => {
             </div>
         </motion.div >
     )
+}
+
+About.propTypes = {
+    setLinksAccessed: PropTypes.func.isRequired,
+    linksAccessed: PropTypes.instanceOf(Map).isRequired,
 }
 
 export default About

@@ -1,12 +1,13 @@
 import "./NavBar.css"
 import { NavLink, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import linkedInIcon from "../../assets/icons/linkedin-icon.png";
 import githubIcon from "../../assets/icons/github-mark.svg";
 
 const textBgBlur = "text-center absolute hover:cursor-pointer transition-colors ease-in-out duration-150 group-hover:bg-gradient-to-r from-pink-300 to-orange-400 group-hover:scale-125 inset-0 bg-clip-text text-transparent blur blurEffect"
 
-const NavBar = (props) => {
+const NavBar = ({linksAccessed}) => {
     const location = useLocation();
 
     const getIsHighlighted = (path) => {
@@ -19,7 +20,7 @@ const NavBar = (props) => {
 
     const getNavLinkClass = (path) => {
         // if link not accessed yet and the given path isn't the current location, do infinite animation
-        if (path !== location && !props.linksAccessed.get(path)) {
+        if (path !== location && !linksAccessed.get(path)) {
             return "pulsate text-purple-400 relative hover:cursor-pointer ease-in-out duration-150 group-hover:text-purple-300 transition-colors"
         } else {
             return "relative hover:cursor-pointer ease-in-out duration-150 group-hover:text-[#ffffff] transition-colors"
@@ -61,6 +62,10 @@ const NavBar = (props) => {
 
         </div>
     )
+}
+
+NavBar.propTypes = {
+    linksAccessed: PropTypes.instanceOf(Map).isRequired
 }
 
 export default NavBar

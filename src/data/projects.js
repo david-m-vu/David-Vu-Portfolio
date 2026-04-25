@@ -1,18 +1,37 @@
+import shibaWorldThumb from "../assets/thumbnails/shiba-world-thumb.png";
+import funcThumb from "../assets/thumbnails/func-thumb.png"
 import karimeRankThumb from "../assets/thumbnails/karime-rank-thumb2.png"
 import moodifyThumb from "../assets/thumbnails/moodify-thumb.png"
 import doNothingThumb from "../assets/thumbnails/do-nothing-thumb.png"
 import wheresOskiThumb from "../assets/thumbnails/wheres-oski-thumb.png"
-import soundbiteThumb from "../assets/thumbnails/soundbite-thumb.png";
+// import soundbiteThumb from "../assets/thumbnails/soundbite-thumb.png";
 import armageddonThumb from "../assets/thumbnails/armageddon-thumb.png";
 
 export const projects = [
+    {
+      name: "SHIBA_WORLD",
+      date: 2026,
+      link: "https://shiba-world.vercel.app/",
+      thumbnail: shibaWorldThumb,
+      description: `SHIBA_WORLD (Watch3Gether) is a high-performance, browser-based 3D metaverse where players can create rooms and invite friends to hang out, chat, and watch youtube videos together 
+        in real time. Built with scalability in mind, the platform manages complex multiplayer states seamlessly. No download required!`,
+      tags: ["Socket.IO", "Redis", "React Three Fiber", "Zustand", "Express", "Tailwind CSS", "Drei", "Rapier", ]
+    },  
+    {
+      name: "f(unc)",
+      date: 2025,
+      link: "https://f-unc-translator.vercel.app/",
+      thumbnail: funcThumb,
+      description: "AI-powered web-app that implements a multi-agent workflow to bridge the generational gap in internet culture - explaining internet slang and memes in a generation-specific language (Gen-Z, Gen-X, Millennial, and Baby boomers) that people of all ages can more naturally understand.",
+      tags: ["LangGraph", "LangChain", "Next.js", "ChromaDB", "FastAPI", "React", "TypeScript", "Youtube Data API", "BeautifulSoup4", "Tailwind CSS" ]
+    },  
     {
       name: "KarimeRank",
       date: 2024,
       link: "https://karime-rank.vercel.app/",
       thumbnail: karimeRankThumb,
-      description: "Image ranking MERN app that brings K-pop fans together as a platform for crowdsourced effort to find the best, most high quality images of Korean performers. Handles ~10,000 API/DB requests daily and pulls new, web scraped, images every month autonomously.",
-      tags: ["MongoDB", "Express", "React", "Node.js", "Cheerio", "Tailwind.css"]
+      description: "Image ranking web-app that brings K-pop fans together as a platform for crowdsourced effort to find the best, most high quality images of Korean performers. Handles ~10,000 API/DB requests daily and pulls new, web scraped, images every month autonomously.",
+      tags: ["MongoDB", "Firebase", "Express", "React", "Node.js", "Cheerio", "Puppeteer", "Tailwind CSS"]
     },
     {
       name: "Wheres Oski?",
@@ -51,7 +70,7 @@ export const projects = [
         date: 2024,
         link: "https://armageddon-plum.vercel.app/",
         thumbnail: armageddonThumb,
-        description: "First dive into three.js, learned the basics of placing 3D objects into a space with cameras, lighting, and shapes.",
-        tags: ["three.js"]
+        description: "First dive into Three.js, learned the basics of placing 3D objects into a space with cameras, lighting, and shapes.",
+        tags: ["Three.js"]
     }
   ]

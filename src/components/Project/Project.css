@@ -28,7 +28,7 @@
 } */
 
 .caption {
-    min-height: 320px;
+    
     opacity: 0;
     transform: translate3d(0, -1rem, 0);
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -56,14 +56,14 @@
     .Project {
         background: rgb(252,186,3);
         background: linear-gradient(45deg, rgba(252,134,3,0.4640231092436975) 0%, rgba(67,73,197,1) 100%);
-        width: 400px;
+        width: 450px;
         height: 325px;
         overflow: hidden;
         transition: height 0.2s ease;
     }
     
     .opened {
-        height: 650px;
+        height: 705px;
     }
     
 }

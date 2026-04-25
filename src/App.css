@@ -2,6 +2,12 @@
   animation: slide-right 1s ease infinite alternate;
 }
 
+.prompt::before {
+    content: "> ";
+    font-family: monospace;
+    color: #c27aff;
+}
+
 @keyframes slide-right {
   0%, 50% {
     transform: translate3d(0rem, 0, 0)
