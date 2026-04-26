@@ -34,6 +34,8 @@ import chromaDBIcon from "../assets/icons/chroma-db-icon.svg";
 import htmlIcon from "../assets/icons/html-icon.svg";
 import cssIcon from "../assets/icons/css-icon.svg";
 import tailwindIcon from "../assets/icons/tailwind-icon.svg";
+import cheerioIcon from "../assets/icons/cheerio-icon.svg";
+import puppeteerIcon from "../assets/icons/puppeteer-icon.svg";
 import gitIcon from "../assets/icons/git-icon.svg";
 import flutterIcon from "../assets/icons/flutter-icon.svg";
 import postgreIcon from "../assets/icons/postgre-icon.svg";
@@ -159,6 +161,10 @@ export const technologies = [
         icon: thriftIcon
     },
     {
+        name: "PyTorch",
+        icon: pytorchIcon
+    },
+    {
         name: "LangChain",
         icon: langChainIcon,
         round: true,
@@ -201,6 +207,14 @@ export const technologies = [
         icon: tailwindIcon
     },
     {
+        name: "Cheerio",
+        icon: cheerioIcon
+    },
+    {
+        name: "Puppeteer",
+        icon: puppeteerIcon
+    },
+    {
         name: "Git",
         icon: gitIcon
     },
@@ -232,8 +246,4 @@ export const technologies = [
         name: "RocketMQ",
         icon: rocketmqIcon
     },
-    {
-        name: "PyTorch",
-        icon: pytorchIcon
-    }
 ]
