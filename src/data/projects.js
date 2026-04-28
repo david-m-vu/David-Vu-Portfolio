@@ -15,7 +15,7 @@ export const projects = [
       thumbnail: shibaWorldThumb,
       description: `SHIBA_WORLD (Watch3Gether) is a high-performance, browser-based 3D metaverse where players can create rooms and invite friends to hang out, chat, and watch youtube videos together 
         in real time. Built with scalability in mind, the platform manages complex multiplayer states seamlessly. No download required!`,
-      tags: ["Socket.IO", "Redis", "React Three Fiber", "Zustand", "Express", "Tailwind CSS", "Drei", "Rapier", ]
+      tags: ["Socket.IO", "Redis", "React Three Fiber", "Zustand", "Express", "Tailwind CSS", "Drei", "Rapier", "Youtube Data / IFrame API" ]
     },  
     {
       name: "f(unc)",
@@ -31,7 +31,7 @@ export const projects = [
       link: "https://karime-rank.vercel.app/",
       thumbnail: karimeRankThumb,
       description: "Image ranking web-app that brings K-pop fans together as a platform for crowdsourced effort to find the best, most high quality images of Korean performers. Handles ~10,000 API/DB requests daily and pulls new, web scraped, images every month autonomously.",
-      tags: ["MongoDB", "Firebase", "Express", "React", "Node.js", "Cheerio", "Puppeteer", "Tailwind CSS"]
+      tags: ["MongoDB", "Firebase", "Express", "React", "Node.js", "JSON Web Token", "Cheerio", "Puppeteer", "Tailwind CSS"]
     },
     {
       name: "Wheres Oski?",
